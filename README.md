@@ -57,13 +57,13 @@ pip install -r requirements.txt
 
   
 
-3.  **Set up environment variables: Create a .env file in the root directory of the project with the following content:**
+3.  **Set up environment variables:**
+Create a .env file in the root directory of the project with the following content:
 
 ```bash
-
 BASE_URL=https://veri.bet/odds-picks
-
 SCRAPE_INTERVAL=15
+MAX_RETRIES=3
 
 ```
 
