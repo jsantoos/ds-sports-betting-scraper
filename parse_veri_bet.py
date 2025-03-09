@@ -214,10 +214,10 @@ class SportsScraper:
                     if len(total_prices) >= 2:
                         items.append(Item(sport_league, event_date_utc, team1, team2, period, "over/under",
                                           self.extract_price(total_prices[1].text), "over", "total",
-                                          self.extract_spread(spread_prices[1].text)))
+                                          self.extract_spread(total_prices[1].text)))
                         items.append(Item(sport_league, event_date_utc, team1, team2, period, "over/under",
                                           self.extract_price(total_prices[2].text), "under", "total",
-                                          self.extract_spread(spread_prices[2].text)))
+                                          self.extract_spread(total_prices[2].text)))
 
 
                 except Exception as e:
